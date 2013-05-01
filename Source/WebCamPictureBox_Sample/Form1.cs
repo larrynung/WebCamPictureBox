@@ -29,7 +29,7 @@ namespace WebCamPictureBox_Sample
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.webCamPictureBox1.Start();
+			this.webCamPictureBox1.Start();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace WebCamPictureBox_Sample
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            this.webCamPictureBox1.CaptureInterval = int.Parse (numericUpDown1.Value.ToString ()) ;
+			//this.webCamPictureBox1.FrameRate = int.Parse(numericUpDown1.Value.ToString());
         }
 
       
@@ -63,7 +63,10 @@ namespace WebCamPictureBox_Sample
             this.toolStripStatusLabel2.Text = this.webCamPictureBox1.IsStarted ? "Start" : "Stop"; 
         }
 
-
-      
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			nudWidth.Value = webCamPictureBox1.Width;
+			nudHeight.Value = webCamPictureBox1.Height;
+		}
     }
 }
