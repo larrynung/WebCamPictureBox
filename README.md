@@ -3,8 +3,7 @@ Webcam PictureBox
 
 Webcam PictureBox Control
 
-[![Build Status](https://travis-ci.org/larrynung/WebCamPictureBox.png?branch=master)](https://travis-ci.org/larrynung/WebCamPictureBox)
-
+[![Build status](https://ci.appveyor.com/api/projects/status/0e1qusutkfgq04rx?svg=true)](https://ci.appveyor.com/project/larrynung/webcampicturebox)
 
 Test webcam connection
 
